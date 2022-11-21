@@ -1,6 +1,13 @@
 #!/bin/bash
-# Formats newly created React apps with formatting I commonly use.
+# Creates and formats new react app for common use.
 echo Enter app name && read NAME
+
+echo ----------
+echo **Creating React App**
+echo ----------
+
+npx create-react-app $NAME
+cd $NAME
 
 echo ----------
 echo **Updating folder**
